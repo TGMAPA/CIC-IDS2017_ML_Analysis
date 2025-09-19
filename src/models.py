@@ -8,19 +8,19 @@ from sklearn.decomposition import PCA
 from keras.models import Sequential
 
 # Lectura de objetos serializados
-with open("/home/mapa/Documents/Tec/7S/IA-Avanzada/IA-Avanzada-1/ProyectoFinal/dev/serialObjects/s_regLogModel.pkl", "rb") as file:
+with open("../serialObjects/s_regLogModel.pkl", "rb") as file:
     regLogModel:LogisticRegression = pickle.load(file)
 
-with open("/home/mapa/Documents/Tec/7S/IA-Avanzada/IA-Avanzada-1/ProyectoFinal/dev/serialObjects/s_rnModel.pkl", "rb") as file:
+with open("../serialObjects/s_rnModel.pkl", "rb") as file:
     rnmodel:Sequential = pickle.load(file)
 
-with open("/home/mapa/Documents/Tec/7S/IA-Avanzada/IA-Avanzada-1/ProyectoFinal/dev/serialObjects/s_pcaObject.pkl", "rb") as file:
+with open("../serialObjects/s_pcaObject.pkl", "rb") as file:
     pcaObject:PCA = pickle.load(file)
 
-with open("/home/mapa/Documents/Tec/7S/IA-Avanzada/IA-Avanzada-1/ProyectoFinal/dev/serialObjects/s_scaler.pkl", "rb") as file:
+with open("../serialObjects/s_scaler.pkl", "rb") as file:
     scaler:StandardScaler = pickle.load(file)
 
-with open("/home/mapa/Documents/Tec/7S/IA-Avanzada/IA-Avanzada-1/ProyectoFinal/dev/serialObjects/s_categories.pkl", "rb") as file:
+with open("../serialObjects/s_categories.pkl", "rb") as file:
     categories:list = pickle.load(file)
 
 # Función que realiza la predicción de una entreada dada
